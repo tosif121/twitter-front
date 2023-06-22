@@ -18,7 +18,7 @@ const FeedCard: React.FC<FeedCardProps> = (props) => {
       <div className="grid grid-cols-12 gap-3 sm:items-start items-baseline">
         <div className="col-span-1">
           {data.author?.profileImgURL && (
-            <img className="rounded-full" src={data.author.profileImgURL} alt="user-image" height={50} width={50} />
+            <Image className="rounded-full" src={data.author.profileImgURL} alt="user-image" height={50} width={50} />
           )}
         </div>
         <div className="col-span-11">
@@ -28,7 +28,7 @@ const FeedCard: React.FC<FeedCardProps> = (props) => {
             </Link>
           </h5>
           <p>{data.content}</p>
-          {data.imageURL && <img src={data.imageURL} alt="image" width={400} height={400} />}
+          {data.imageURL && <Image src={data.imageURL} alt="image" width={400} height={400} />}
           <div className="flex justify-between mt-5 text-xl items-center p-2 w-[90%]">
             <div>
               <BiMessageRounded />

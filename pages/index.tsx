@@ -77,7 +77,7 @@ export default function Home(props: HomeProps) {
             <div className="grid grid-cols-12 gap-3">
               <div className="col-span-1">
                 {user?.profileImgURL && (
-                  <img className="rounded-full" src={user?.profileImgURL} alt="user-image" height={50} width={50} />
+                  <Image className="rounded-full" src={user?.profileImgURL} alt="user-image" height={50} width={50} />
                 )}
               </div>
               <div className="col-span-11">
@@ -88,7 +88,7 @@ export default function Home(props: HomeProps) {
                   placeholder="What's happening?"
                   rows={3}
                 ></textarea>
-                {imageURL && <img src={imageURL} alt="tweet-image" width={300} height={300} />}
+                {imageURL && <Image src={imageURL} alt="tweet-image" width={300} height={300} />}
                 <div className="mt-2 flex justify-between items-center">
                   <BiImageAlt onClick={handleSelectImage} className="text-xl" />
                   <button

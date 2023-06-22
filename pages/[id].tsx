@@ -64,7 +64,7 @@ const UserProfilePage: NextPage<ServerProps> = (props) => {
           </nav>
           <div className="p-4 border-b border-slate-800">
             {props.userInfo?.profileImgURL && (
-              <img
+              <Image
                 src={props.userInfo?.profileImgURL}
                 alt="user-image"
                 className="rounded-full"
